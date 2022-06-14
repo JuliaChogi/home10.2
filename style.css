@@ -1,0 +1,60 @@
+.background {
+    height: 500px;
+    width: 802px;
+    position: relative;
+    overflow: hidden;
+
+    animation: sunrise 12s ease infinite;
+
+}
+
+@keyframes sunrise {
+    0% {
+        background: rgb(195, 101, 34);
+        background: linear-gradient(0deg, rgba(195, 101, 34, 0.9556197478991597) 0%, rgba(83, 45, 253, 0.9752275910364145) 100%);
+    }
+
+    50% {
+        background: rgb(34, 164, 195);
+        background: linear-gradient(0deg, rgba(34, 164, 195, 0.9556197478991597) 0%, rgba(71, 63, 181, 1) 67%, rgba(83, 45, 253, 0.9752275910364145) 100%);
+    }
+
+    100% {
+        background: rgb(159, 52, 94);
+        background: linear-gradient(0deg, rgba(159, 52, 94, 0.9556197478991597) 0%, rgba(128, 63, 181, 1) 67%, rgba(83, 45, 253, 0.9752275910364145) 100%);
+    }
+}
+
+.sun {
+    width: 7vw;
+    height: 7vw;
+    background: rgb(214, 136, 46);
+    border-radius: 100%;
+
+    position: absolute;
+    bottom: 7vw;
+    right: 0vw;
+    transform-origin: -28vw 7vw;
+    animation: suntrack 12s infinite normal linear;
+}
+
+@keyframes suntrack {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        background: rgb(224, 224, 192);
+        height: 5vw;
+        width: 5vw;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.grass {
+    position: absolute;
+    bottom: 0;
+}
